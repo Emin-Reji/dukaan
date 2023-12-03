@@ -210,8 +210,7 @@ class ExtraChargesPage extends StatelessWidget {
               ],
             ),
           ),
-          // Combine both body contents into a single Column
-          //SizedBox(height: 5),
+                   //SizedBox(height: 5),
           // Positioned(
           //   top: MediaQuery.of(context).size.height / 1.0,
           //   left: 15,

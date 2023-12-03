@@ -1,3 +1,4 @@
+import 'package:dukaan/pages/order.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dukaan/pages/Payments.dart';
@@ -67,6 +68,12 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ExtraChargesPage()),
+                  );
+                }
+                else if (titles[index] == "Order form") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => OrderPage()),
                   );
                 }
               },
