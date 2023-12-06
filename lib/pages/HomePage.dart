@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:dukaan/pages/Payments.dart';
 import 'package:dukaan/pages/ExtraChargesPage.dart';
 import 'package:dukaan/pages/Catalogue.dart';
+import 'package:dukaan/pages/AdditionalInfo.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -28,13 +29,21 @@ class HomePage extends StatelessWidget {
     "Order\nform"
   ];
 
-  @override
-  Widget build(BuildContext context) {
+ Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 216, 216, 216),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(70.0),
         child: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.menu,color: Colors.white,), // You can change the icon as needed
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AdditionalInfo()),
+              );
+            },
+          ),
           centerTitle: true,
           title: Text(
             'Manage Store',
