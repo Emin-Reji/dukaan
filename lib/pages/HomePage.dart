@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dukaan/pages/Payments.dart';
 import 'package:dukaan/pages/ExtraChargesPage.dart';
+import 'package:dukaan/pages/Catalogue.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -74,6 +75,12 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => OrderPage()),
+                  );
+                }
+                else if (titles[index] == "My Customers") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Catalogue()),
                   );
                 }
               },
