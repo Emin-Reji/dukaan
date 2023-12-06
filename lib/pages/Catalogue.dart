@@ -7,9 +7,9 @@ class Catalogue extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 205, 205, 205),
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(140), // Adjust the preferredSize as needed
+        preferredSize: Size.fromHeight(100), // Adjust the preferredSize as needed
         child: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Color.fromARGB(255, 21, 100, 165),
@@ -84,7 +84,7 @@ class Catalogue extends StatelessWidget {
                 width: 450,
                 height: 200,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 223, 222, 222),
+                  color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
@@ -207,7 +207,7 @@ class Catalogue extends StatelessWidget {
                 width: 450,
                 height: 200,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 223, 222, 222),
+                  color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
@@ -330,7 +330,7 @@ class Catalogue extends StatelessWidget {
                 width: 450,
                 height: 200,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 223, 222, 222),
+                  color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
@@ -453,7 +453,7 @@ class Catalogue extends StatelessWidget {
                 width: 450,
                 height: 200,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 223, 222, 222),
+                  color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
