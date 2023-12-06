@@ -19,13 +19,13 @@ class HomePage extends StatelessWidget {
   ];
 
   List<String> titles = [
-    "Marketing \n Designs",
-    "Online Payments",
-    "Discount Coupons",
-    "My Customers",
-    "Store QR Codes",
-    "Extra Charges",
-    "Order form"
+    "Marketing\nDesigns",
+    "Online\nPayments",
+    "Discount\nCoupons",
+    "My\nCustomers",
+    "Store QR\nCodes",
+    "Extra\nCharges",
+    "Order\nform"
   ];
 
   @override
@@ -70,14 +70,12 @@ class HomePage extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) => ExtraChargesPage()),
                   );
-                }
-                else if (titles[index] == "Order form") {
+                } else if (titles[index] == "Order form") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => OrderPage()),
                   );
-                }
-                else if (titles[index] == "My Customers") {
+                } else if (titles[index] == "My Customers") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Catalogue()),
@@ -85,23 +83,45 @@ class HomePage extends StatelessWidget {
                 }
               },
               child: Container(
+                padding: EdgeInsets.only(left: 8),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
+                    Stack(
+                      alignment: Alignment.centerRight,
                       children: [
                         Image.asset(
                           images[index],
                           width: 70,
-                          height: 64,
+                          height: 54,
+                          alignment: Alignment.centerLeft,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(2),
-                        ),
-                        Text(
+                        if (titles[index] == "Order form")
+                          Container(
+                            padding: EdgeInsets.all(4),
+                            child: Text(
+                              'NEW',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                          ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: Expanded(
+                        child: Text(
                           titles[index],
                           style: GoogleFonts.montserrat(
                             fontSize: 15,
@@ -109,8 +129,8 @@ class HomePage extends StatelessWidget {
                             color: Colors.black,
                           ),
                         ),
-                      ],
-                    )
+                      ),
+                    ),
                   ],
                 ),
               ),
