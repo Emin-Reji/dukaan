@@ -60,22 +60,22 @@ class HomePage extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return InkWell(
               onTap: () {
-                if (titles[index] == "Online Payments") {
+                if (titles[index] == "Online\nPayments") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Payments()),
                   );
-                } else if (titles[index] == "Extra Charges") {
+                } else if (titles[index] == "Extra\nCharges") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ExtraChargesPage()),
                   );
-                } else if (titles[index] == "Order form") {
+                } else if (titles[index] == "Order\nform") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => OrderPage()),
                   );
-                } else if (titles[index] == "My Customers") {
+                } else if (titles[index] == "My\nCustomers") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Catalogue()),
