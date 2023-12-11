@@ -1,10 +1,10 @@
-import 'package:dukaan/pages/order.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dukaan/pages/Payments.dart';
 import 'package:dukaan/pages/ExtraChargesPage.dart';
 import 'package:dukaan/pages/Catalogue.dart';
 import 'package:dukaan/pages/AdditionalInfo.dart';
+import 'package:dukaan/pages/order.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -29,14 +29,15 @@ class HomePage extends StatelessWidget {
     "Order\nform"
   ];
 
- Widget build(BuildContext context) {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 216, 216, 216),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(70.0),
         child: AppBar(
           leading: IconButton(
-            icon: Icon(Icons.menu,color: Colors.white,), // You can change the icon as needed
+            icon: Icon(Icons.menu, color: Colors.white),
             onPressed: () {
               Navigator.push(
                 context,
@@ -57,13 +58,13 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(17.0),
+        padding: const EdgeInsets.all(10.0),
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: 1.5,
-            crossAxisSpacing: 22.0,
-            mainAxisSpacing: 27.0,
+            crossAxisSpacing: 12.0,
+            mainAxisSpacing: 12.0,
           ),
           itemCount: 7,
           itemBuilder: (BuildContext context, int index) {
@@ -92,16 +93,17 @@ class HomePage extends StatelessWidget {
                 }
               },
               child: Container(
-                padding: EdgeInsets.only(left: 8),
+                padding: EdgeInsets.symmetric(horizontal: 8),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(8),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Stack(
-                      alignment: Alignment.centerRight,
+                      alignment: Alignment.centerLeft,
                       children: [
                         Image.asset(
                           images[index],
@@ -109,34 +111,37 @@ class HomePage extends StatelessWidget {
                           height: 54,
                           alignment: Alignment.centerLeft,
                         ),
-                        if (titles[index] == "Order form")
-                          Container(
-                            padding: EdgeInsets.all(4),
-                            child: Text(
-                              'NEW',
-                              style: GoogleFonts.montserrat(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white,
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.circular(2),
-                            ),
+                        if (titles[index] == "Order\nform")
+                          Row(
+                            children: [
+                              SizedBox(width: 125),
+                              Container(
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  'NEW',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(2),
+                                ),
+                              )
+                            ],
                           ),
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 8),
-                      child: Expanded(
-                        child: Text(
-                          titles[index],
-                          style: GoogleFonts.montserrat(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black,
-                          ),
+                      padding: const EdgeInsets.only(top: 10, left: 8,bottom: 5),
+                      child: Text(
+                        titles[index],
+                        style: GoogleFonts.montserrat(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black,
                         ),
                       ),
                     ),

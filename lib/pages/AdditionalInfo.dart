@@ -50,8 +50,7 @@ class AdditionalInfo extends StatelessWidget {
                 Icon(Icons.arrow_forward_ios),
               ],
             ),
-            SizedBox(height: 20), // Adjust the spacing as needed
-            // Second set of icon and text (copy of the first set)
+            SizedBox(height: 20), 
             Row(
               children: [
                 Icon(Icons.translate_sharp),
@@ -68,14 +67,14 @@ class AdditionalInfo extends StatelessWidget {
                 Icon(Icons.arrow_forward_ios),
               ],
             ),
-            SizedBox(height: 20), // Adjust the spacing as needed
-            // Second set of icon and text (copy of the first set)
+            SizedBox(height: 20), 
+            
             Row(
               children: [
                 Icon(Icons.message_outlined),
                 SizedBox(width: 15),
                 Text(
-                  'Whatsapp Chat Support',
+                  'WhatsApp Chat Support',
                   style: GoogleFonts.montserrat(
                     fontSize: 17,
                     fontWeight: FontWeight.w400,
