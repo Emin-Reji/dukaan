@@ -36,7 +36,7 @@ class Payments extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(20),
               child: Container(
-                height: 230,
+                height: 217,
                 width: 350,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 245, 244, 244),
@@ -67,7 +67,7 @@ class Payments extends StatelessWidget {
                       ),
                       SizedBox(height: 10),
                       SizedBox(
-                        height: 10,
+                        height: 5,
                         child: LinearProgressIndicator(
                           value: progressValue,
                           color: const Color.fromARGB(255, 21, 100, 165),
@@ -90,7 +90,7 @@ class Payments extends StatelessWidget {
                           primary: const Color.fromARGB(255, 21, 100, 165),
                           onPrimary: Colors.white,
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(2)),
+                              borderRadius: BorderRadius.circular(7)),
                         ),
                         child: Text(
                           "Increase Limit",
@@ -107,7 +107,7 @@ class Payments extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(height: 25),
+            child: SizedBox(height: 5),
           ),
           SliverToBoxAdapter(
             child: Row(
@@ -121,7 +121,7 @@ class Payments extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
                 ),
-                SizedBox(width: 22, height: 25),
+                SizedBox(width: 22, height: 15),
                 Expanded(
                   child: Text(
                     'Online Payments',
@@ -138,7 +138,7 @@ class Payments extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(height: 15),
+            child: SizedBox(height: 8),
           ),
           SliverToBoxAdapter(
             child: Row(
@@ -169,7 +169,7 @@ class Payments extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(height: 4.0),
+            child: SizedBox(height: 1.0),
           ),
           SliverToBoxAdapter(
             child: Container(
@@ -179,7 +179,7 @@ class Payments extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(height: 10),
+            child: SizedBox(height: 5),
           ),
           SliverToBoxAdapter(
             child: Row(
@@ -208,7 +208,7 @@ class Payments extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(height: 10),
+            child: SizedBox(height: 5),
           ),
           SliverToBoxAdapter(
             child: Row(
@@ -255,9 +255,11 @@ class Payments extends StatelessWidget {
                               color: Colors.white)),
                       SizedBox(height: 10),
                       Expanded(
+                        
                           child: Text('₹13,332',
                               style: GoogleFonts.montserrat(
                                   fontSize: 22,
+                                  
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white))),
                     ],
@@ -339,387 +341,407 @@ class Payments extends StatelessWidget {
           ),
           //order start
           SliverToBoxAdapter(
-            child: Row(
-              children: [
-                SizedBox(height: 125),
-                Container(
-                  height: 100,
-                  width: 392.5,
-                  decoration:
-                      BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        'lib/images/T1.png', // Change to your image path
-                        width: 80, // Adjust width as needed
-                        height: double.infinity,
-                        alignment: Alignment.topLeft,
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Order #1688068',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+              child: Column(
+                children: [
+                  Container(
+                    height: 93,
+                    width: 392.5,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'lib/images/T1.png',
+                          width: 80,
+                          height: double.infinity,
+                          alignment: Alignment.topLeft,
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Order #1688068',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 1),
-                              Text(
-                                'Jul 12, 02:06 PM',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+                                SizedBox(height: 1),
+                                Text(
+                                  'Jul 12, 02:06 PM',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 8),
-                              Text(
-                                '₹799 deposited to 58860200000138',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 7.5,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                  fontStyle: FontStyle.italic,
+                                SizedBox(height: 8),
+                                Text(
+                                  '₹799 deposited to 58860200000138',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 7.5,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.italic,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
-                          child: Column(
-                            children: [
-                              Text(
-                                '₹799',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
-                              ),
-                              SizedBox(height: 2),
-                              Expanded(
-                                  child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.circle_sharp,
-                                    size: 10,
-                                    color: Colors.green,
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
+                            child: Column(
+                              children: [
+                                Text(
+                                  '₹799',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
                                   ),
-                                  Text(
-                                    'Succesfull',
-                                    style: GoogleFonts.montserrat(
-                                        fontSize: 10,
+                                ),
+                                SizedBox(height: 2),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle_sharp,
+                                      size: 10,
+                                      color: Colors.green,
+                                    ),
+                                    Text(
+                                      'Successful',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 9,
                                         fontWeight: FontWeight.w600,
-                                        color: Colors.black),
-                                  ),
-                                ],
-                              ))
-                            ],
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
             ),
-          ),
-          SliverToBoxAdapter(
-            child: Row(
-              children: [
-                SizedBox(height: 50),
-                Container(
-                  height: 100,
-                  width: 392.5,
-                  decoration:
-                      BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        'lib/images/mug.jpg', // Change to your image path
-                        width: 80, // Adjust width as needed
-                        height: double.infinity,
-                        alignment: Alignment.topLeft,
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Order #1457741',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+            SliverToBoxAdapter(
+              child: Column(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 392.5,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'lib/images/mug.jpg',
+                          width: 55,
+                          height: double.infinity,
+                          alignment: Alignment.topLeft,
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 7, width: 5),
+                                Text(
+                                  'Order #1457741',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 1),
-                              Text(
-                                'Apr 26, 07:47 AM',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+                                SizedBox(height: 1),
+                                Text(
+                                  'Apr 26, 07:47 AM',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 8),
-                              Text(
-                                '₹397 deposited to 58860200000138',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 7.5,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                  fontStyle: FontStyle.italic,
+                                SizedBox(height: 8),
+                                Text(
+                                  '₹397 deposited to 588602000138',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 7.5,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.italic,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
-                          child: Column(
-                            children: [
-                              Text(
-                                '₹397.4',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
-                              ),
-                              SizedBox(height: 2),
-                              Expanded(
-                                  child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.circle_sharp,
-                                    size: 10,
-                                    color: Colors.green,
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
+                            child: Column(
+                              children: [
+                                Text(
+                                  '  ₹397.4',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
                                   ),
-                                  Text(
-                                    'Succesfull',
-                                    style: GoogleFonts.montserrat(
-                                        fontSize: 10,
+                                ),
+                                SizedBox(height: 2),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle_sharp,
+                                      size: 10,
+                                      color: Colors.green,
+                                    ),
+                                    Text(
+                                      '    Successful',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 9,
                                         fontWeight: FontWeight.w600,
-                                        color: Colors.black),
-                                  ),
-                                ],
-                              ))
-                            ],
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
             ),
-          ),
-          SliverToBoxAdapter(
-            child: Row(
-              children: [
-                SizedBox(height: 150),
-                Container(
-                  height: 100,
-                  width: 392.5,
-                  decoration:
-                      BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        'lib/images/book.png', // Change to your image path
-                        width: 80, // Adjust width as needed
-                        height: double.infinity,
-                        alignment: Alignment.topLeft,
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Order #1408896',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+            SliverToBoxAdapter(
+              child: Column(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 392.5,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'lib/images/book.png',
+                          width: 70,
+                          height: double.infinity,
+                          alignment: Alignment.topLeft,
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 7,),
+                                Text(
+                                  'Order #1408896',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 1),
-                              Text(
-                                'Apr 11, 10:54 AM',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+                                SizedBox(height: 1),
+                                Text(
+                                  'Apr 11, 10:54 AM',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 8),
-                              Text(
-                                '₹686 deposited to 58860200000138',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 7.5,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                  fontStyle: FontStyle.italic,
+                                SizedBox(height: 8),
+                                Text(
+                                  '₹686 deposited to 58860200000138',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 7.5,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.italic,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
-                          child: Column(
-                            children: [
-                              Text(
-                                '₹686.42',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
-                              ),
-                              SizedBox(height: 2),
-                              Expanded(
-                                  child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.circle_sharp,
-                                    size: 10,
-                                    color: Colors.green,
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
+                            child: Column(
+                              children: [
+                                Text(
+                                  '₹686.42',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
                                   ),
-                                  Text(
-                                    'Succesfull',
-                                    style: GoogleFonts.montserrat(
-                                        fontSize: 10,
+                                ),
+                                SizedBox(height: 2),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle_sharp,
+                                      size: 10,
+                                      color: Colors.green,
+                                    ),
+                                    Text(
+                                      ' Successful',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 9,
                                         fontWeight: FontWeight.w600,
-                                        color: Colors.black),
-                                  ),
-                                ],
-                              ))
-                            ],
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
             ),
-          ),
-          SliverToBoxAdapter(
-            child: Row(
-              children: [
-                SizedBox(height: 150),
-                Container(
-                  height: 100,
-                  width: 392.5,
-                  decoration:
-                      BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        'lib/images/game.png', // Change to your image path
-                        width: 80, // Adjust width as needed
-                        height: double.infinity,
-                        alignment: Alignment.topLeft,
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Order #1369633',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+            SliverToBoxAdapter(
+              child: Column(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 392.5,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'lib/images/game.png',
+                          width: 80,
+                          height: double.infinity,
+                          alignment: Alignment.topLeft,
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(1, 1, 5, 38),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Order #1369633',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 1),
-                              Text(
-                                'Apr 2, 11:29 AM',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
+                                SizedBox(height: 1),
+                                Text(
+                                  'Apr 2, 11:29 AM',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 8),
-                              Text(
-                                '₹1123 deposited to 58860200000138',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 7.5,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                  fontStyle: FontStyle.italic,
+                                SizedBox(height: 8),
+                                Text(
+                                  '₹1123 deposited to 588602000138',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 7.5,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.italic,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
-                          child: Column(
-                            children: [
-                              Text(
-                                '₹1123.5',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
-                              ),
-                              SizedBox(height: 2),
-                              Expanded(
-                                  child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.circle_sharp,
-                                    size: 10,
-                                    color: Colors.green,
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(89, 1, 1, 38),
+                            child: Column(
+                              children: [
+                                Text(
+                                  '₹1123.5',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
                                   ),
-                                  Text(
-                                    'Succesfull',
-                                    style: GoogleFonts.montserrat(
-                                        fontSize: 10,
+                                ),
+                                SizedBox(height: 2),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle_sharp,
+                                      size: 10,
+                                      color: Colors.green,
+                                    ),
+                                      Text(
+                                     'Successful',
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 9,
                                         fontWeight: FontWeight.w600,
-                                        color: Colors.black),
-                                  ),
-                                ],
-                              ))
-                            ],
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
-      ),
-    );
+          ],
+        ),
+      );
+    
   }
 }
+       
