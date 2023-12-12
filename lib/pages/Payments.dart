@@ -382,7 +382,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 8),
                                 Text(
-                                  '₹799 deposited to 58860200000138',
+                                  '₹799 deposited to 588602000138',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 7.5,
                                     fontWeight: FontWeight.w600,
@@ -464,7 +464,7 @@ class Payments extends StatelessWidget {
                               children: [
                                 SizedBox(height: 7, width: 5),
                                 Text(
-                                  'Order #1457741',
+                                  '     Order #1457741',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
@@ -473,7 +473,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 1),
                                 Text(
-                                  'Apr 26, 07:47 AM',
+                                  '      Apr 26, 07:47 AM',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w600,
@@ -482,7 +482,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 8),
                                 Text(
-                                  '₹397 deposited to 588602000138',
+                                  '       ₹397 deposited to 588602000138',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 7.5,
                                     fontWeight: FontWeight.w600,
@@ -564,7 +564,7 @@ class Payments extends StatelessWidget {
                               children: [
                                 SizedBox(height: 7,),
                                 Text(
-                                  'Order #1408896',
+                                  '  Order #1408896',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
@@ -573,7 +573,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 1),
                                 Text(
-                                  'Apr 11, 10:54 AM',
+                                  '  Apr 11, 10:54 AM',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w600,
@@ -582,7 +582,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 8),
                                 Text(
-                                  '₹686 deposited to 58860200000138',
+                                  '  ₹686 deposited to 588602000138',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 7.5,
                                     fontWeight: FontWeight.w600,
@@ -663,7 +663,7 @@ class Payments extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Order #1369633',
+                                  '  Order #1369633',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
@@ -672,7 +672,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 1),
                                 Text(
-                                  'Apr 2, 11:29 AM',
+                                  '  Apr 2, 11:29 AM',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w600,
@@ -681,7 +681,7 @@ class Payments extends StatelessWidget {
                                 ),
                                 SizedBox(height: 8),
                                 Text(
-                                  '₹1123 deposited to 588602000138',
+                                  '  ₹1123 deposited to 58860200138',
                                   style: GoogleFonts.montserrat(
                                     fontSize: 7.5,
                                     fontWeight: FontWeight.w600,
