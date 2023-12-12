@@ -82,7 +82,7 @@ class Catalogue extends StatelessWidget {
             children: [
               Container(
                 width: 450,
-                height: 200,
+                height: 179,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
@@ -116,7 +116,7 @@ class Catalogue extends StatelessWidget {
                                               color: Color.fromARGB(255, 53, 53, 53),
                                             ),
                                           ),
-                                          SizedBox(width: 38,),
+                                          SizedBox(width: 35,),
                                           IconButton(
                                             icon: Icon(Icons.more_vert, color: Colors.black),
                                             onPressed: () {
@@ -127,7 +127,7 @@ class Catalogue extends StatelessWidget {
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
                                           '1 piece',
                                           textAlign: TextAlign.start,
@@ -139,7 +139,7 @@ class Catalogue extends StatelessWidget {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
                                           '₹686.42',
                                           textAlign: TextAlign.start,
@@ -155,15 +155,15 @@ class Catalogue extends StatelessWidget {
                                         child: Row(
                                           children: [
                                             Text(
-                                              'In stock',
-                                              textAlign: TextAlign.start,
+                                              'In stock  ',
+                                              //textAlign: TextAlign.start,
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.w600,
                                                 color: Colors.green,
                                               ),
                                             ),
-                                            SizedBox(width: 105,),
+                                            SizedBox(width: 110,),
                                             Switch(
                                               value: true, // Set the initial value of the switch
                                               onChanged: (bool value) {
@@ -184,7 +184,7 @@ class Catalogue extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 1,),
                     Container(
                       width: double.infinity,
                       height: 1,
@@ -205,7 +205,7 @@ class Catalogue extends StatelessWidget {
               SizedBox(height: 10),
               Container(
                 width: 450,
-                height: 200,
+                height: 179,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
@@ -250,7 +250,7 @@ class Catalogue extends StatelessWidget {
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
                                           '1 piece',
                                           textAlign: TextAlign.start,
@@ -262,7 +262,7 @@ class Catalogue extends StatelessWidget {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
                                           '₹799',
                                           textAlign: TextAlign.start,
@@ -278,7 +278,7 @@ class Catalogue extends StatelessWidget {
                                         child: Row(
                                           children: [
                                             Text(
-                                              'In stock',
+                                              'In stock  ',
                                               textAlign: TextAlign.start,
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 16,
@@ -286,7 +286,7 @@ class Catalogue extends StatelessWidget {
                                                 color: Colors.green,
                                               ),
                                             ),
-                                            SizedBox(width: 105,),
+                                            SizedBox(width: 110,),
                                             Switch(
                                               value: true, // Set the initial value of the switch
                                               onChanged: (bool value) {
@@ -307,7 +307,7 @@ class Catalogue extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 2,),
                     Container(
                       width: double.infinity,
                       height: 1,
@@ -328,7 +328,7 @@ class Catalogue extends StatelessWidget {
               SizedBox(height: 10),
               Container(
                 width: 450,
-                height: 200,
+                height: 177,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
@@ -339,7 +339,7 @@ class Catalogue extends StatelessWidget {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset("lib/images/mug.png", width: 100, height: 100),
+                        Image.asset("lib/images/mug.png", width: 90, height: 90),
                         Expanded(
                           child: Align(
                             alignment: Alignment.topCenter,
@@ -362,7 +362,7 @@ class Catalogue extends StatelessWidget {
                                               color: Color.fromARGB(255, 53, 53, 53),
                                             ),
                                           ),
-                                          SizedBox(width: 38,),
+                                          SizedBox(width: 45,),
                                           IconButton(
                                             icon: Icon(Icons.more_vert, color: Colors.black),
                                             onPressed: () {
@@ -373,7 +373,7 @@ class Catalogue extends StatelessWidget {
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
                                           '1 piece',
                                           textAlign: TextAlign.start,
@@ -385,7 +385,7 @@ class Catalogue extends StatelessWidget {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
                                           '₹397.4',
                                           textAlign: TextAlign.start,
@@ -401,7 +401,7 @@ class Catalogue extends StatelessWidget {
                                         child: Row(
                                           children: [
                                             Text(
-                                              'In stock',
+                                              'In stock    ',
                                               textAlign: TextAlign.start,
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 16,
@@ -409,7 +409,7 @@ class Catalogue extends StatelessWidget {
                                                 color: Colors.green,
                                               ),
                                             ),
-                                            SizedBox(width: 105,),
+                                            SizedBox(width: 110,),
                                             Switch(
                                               value: true, // Set the initial value of the switch
                                               onChanged: (bool value) {
@@ -430,7 +430,7 @@ class Catalogue extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 0,),
                     Container(
                       width: double.infinity,
                       height: 1,
@@ -451,7 +451,7 @@ class Catalogue extends StatelessWidget {
               SizedBox(height: 10),
               Container(
                 width: 450,
-                height: 200,
+                height: 177,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 239, 237, 237),
                   borderRadius: BorderRadius.circular(5),
@@ -462,7 +462,7 @@ class Catalogue extends StatelessWidget {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset("lib/images/game.png", width: 100, height: 100),
+                        Image.asset("lib/images/game.png", width: 80, height: 100),
                         Expanded(
                           child: Align(
                             alignment: Alignment.topCenter,
@@ -485,7 +485,7 @@ class Catalogue extends StatelessWidget {
                                               color: Color.fromARGB(255, 53, 53, 53),
                                             ),
                                           ),
-                                          SizedBox(width: 38,),
+                                          SizedBox(width: 69,),
                                           IconButton(
                                             icon: Icon(Icons.more_vert, color: Colors.black),
                                             onPressed: () {
@@ -496,9 +496,9 @@ class Catalogue extends StatelessWidget {
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
-                                          '1 piece',
+                                          ' 1 piece',
                                           textAlign: TextAlign.start,
                                           style: GoogleFonts.montserrat(
                                             fontSize: 16,
@@ -508,9 +508,9 @@ class Catalogue extends StatelessWidget {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 1),
                                         child: Text(
-                                          '₹1123.5',
+                                          ' ₹1123.5',
                                           textAlign: TextAlign.start,
                                           style: GoogleFonts.montserrat(
                                             fontSize: 16,
@@ -524,7 +524,7 @@ class Catalogue extends StatelessWidget {
                                         child: Row(
                                           children: [
                                             Text(
-                                              'In stock',
+                                              ' In stock     ',
                                               textAlign: TextAlign.start,
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 16,
@@ -532,7 +532,7 @@ class Catalogue extends StatelessWidget {
                                                 color: Colors.green,
                                               ),
                                             ),
-                                            SizedBox(width: 105,),
+                                            SizedBox(width: 110,),
                                             Switch(
                                               value: true, // Set the initial value of the switch
                                               onChanged: (bool value) {
@@ -553,7 +553,7 @@ class Catalogue extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 2,),
                     Container(
                       width: double.infinity,
                       height: 1,
